@@ -1,1 +1,1 @@
-# project-0-gabbyg53
+# sql-assignment-gabbyg53
