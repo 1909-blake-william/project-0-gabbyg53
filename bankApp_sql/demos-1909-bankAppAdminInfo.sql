@@ -1,0 +1,13 @@
+CREATE USER bankAdmin
+IDENTIFIED BY p4ssw0rd
+DEFAULT TABLESPACE users
+TEMPORARY TABLESPACE temp
+QUOTA 10M ON users;
+GRANT CONNECT TO bankAdmin;
+GRANT RESOURCE TO bankAdmin;
+GRANT CREATE SESSION TO bankAdmin;
+GRANT CREATE TABLE TO bankAdmin;
+GRANT CREATE VIEW TO bankAdmin;
+conn bankAdmin/p4ssw0rd;
+
+commit;
